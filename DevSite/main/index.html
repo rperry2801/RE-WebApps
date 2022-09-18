@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+{% for le in lead %}
+	<p>{{le.lead_name}}</p>
+	<p>{{le.lead_addr}}</p>
+	<p>{{le.lead_descript}}</p>
+	<p>{{le.lead_received|safe}}</p>
+	<br><br>
+{% endfor %}
+</html>
